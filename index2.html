@@ -131,14 +131,14 @@
               },
               {
                 title: 'Yes. That was blackmail. Because friends can do that ;)',
-                text: 'Last One. Will you be team up with me this year? :P'
+                text: 'Last One. Will you be team up with me this year? :P '
               }
             ]
 
             swal.queue(steps).then((result) => {
               swal.resetDefaults()
 
-              if (result.value) {
+              if (result && result.value) {
                 swal({
                   title: 'Hurray!!!!',
                   input: "password",
@@ -148,6 +148,23 @@
                     '</pre>',
                 html:
                     'So, you said yes to everything.<pre>Next is a small gift for you :). Wanna see? </pre>',
+                  confirmButtonText: 'Show me!'
+                }).then((result)=>{
+                console.log("11111"+result);
+                if(atob("c2FuamFpc2g=")==result.value){
+                    window.location.href = "https://a3986.github.io/hello-world/imageSlider/slider.html"
+                }
+                else{
+                    console.log("Failed");
+                }
+            })
+              }
+              else{
+                 swal({
+                  title: 'Arey re!! Tafleef!!',
+                  input: "password",
+                html:
+                    'So, you said "No" which is heart-breaking :(. But mera toh dil badaa h naa :P<pre>So here is a small gift for you :). Wanna see? </pre>',
                   confirmButtonText: 'Show me!'
                 }).then((result)=>{
                 console.log("11111"+result);
