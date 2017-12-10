@@ -5,13 +5,19 @@
 <script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="./js/three.min.js"></script>
 <script type="text/javascript" src="./js/jquery.onebook3d-2.33.js?2"></script>
+<style>
+body {
+   background-image: url("i/bg.jpg");
+   background-color: burlywood;
+}
+</style>
 </head>
-<body>
+<body >
 	<div id="mybook" style="width:100%; height:100%"></div>
 	</body>
 	<script type="text/javascript">
 		var src = [ ['pics/001.jpg','Has to start with this pic'], ['pics/002.jpg','Beautiful'], ['pics/003.jpg','Beauty continues...'], [ 'pics/004.jpg','Love'],[ 'pics/005.jpg','Repeat. Because life is good with colors'],[ 'pics/007.jpg','One with the "GHAR KE HI HAI PERSON"'],[ 'pics/008.jpg','One more'],[ 'pics/009.jpg','Best one with me :)'],[ 'pics/010.jpg','Can form a team. What say??'],[ 'pics/011.jpg','One with Aish'],[ 'pics/012.jpg','Because I find this one beautiful'],[ 'pics/006.jpg','Because you guys will be together till the end'],[ 'pics/013.jpg','Happy Birthday Divyani!!']	];
-		$('#mybook').onebook(src,{slope:1, skin:'dark',bgDark:'#56998c url(./i/bg.jpg)', border:10, flip:'basic', cesh:false});
+		$('#mybook').onebook(src,{slope:0, skin:'dark',bgDark:'#56998c url(./i/bg.jpg)', border:10, flip:'basic', cesh:true});
 
 	</script>
 
